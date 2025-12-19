@@ -1,10 +1,10 @@
 // Project Filter Functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
     filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             // Remove active class from all buttons
             filterButtons.forEach(btn => btn.classList.remove('active'));
             // Add active class to clicked button
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             projectCards.forEach(card => {
                 const categories = card.getAttribute('data-category');
-                
+
                 if (filterValue === 'all') {
                     card.style.display = 'flex';
                     card.style.animation = 'fadeInUp 0.6s ease forwards';
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Navbar background change on scroll
     const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 50) {
             navbar.style.background = 'rgba(10, 10, 10, 0.98)';
         } else {
