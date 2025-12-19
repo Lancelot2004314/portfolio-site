@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Center Of Mass Educational Tech - Project Gallery</title>
+    <title>Fei Yuet Lancelot Chum - Projects</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,10 +13,11 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">COMET</a>
+            <a href="#" class="nav-logo">Lancelot Chum</a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="https://fylchum.student.ust.hk/" target="_blank">Personal Page</a></li>
             </ul>
         </div>
     </nav>
@@ -25,12 +26,16 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Hello, world!</h1>
-            <p class="hero-subtitle">Center Of Mass Educational Tech</p>
-            <p class="hero-description">Building innovative educational tools and simulations</p>
+            <p class="hero-subtitle">Fei Yuet Lancelot Chum</p>
+            <p class="hero-description">Year 4 Undergraduate in PHYS+AI Program at HKUST</p>
+            <p class="hero-description">Building innovative educational tools and AI applications</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="https://fylchum.student.ust.hk/" class="btn btn-secondary" target="_blank">
+                    <i class="fas fa-user"></i> Personal Page
+                </a>
                 <a href="https://github.com/Lancelot2004314" class="btn btn-secondary" target="_blank">
-                    <i class="fab fa-github"></i> GitHub Profile
+                    <i class="fab fa-github"></i> GitHub
                 </a>
             </div>
         </div>
@@ -40,25 +45,35 @@
     <section id="projects" class="projects-section">
         <div class="container">
             <h2 class="section-title">Project Gallery</h2>
-            <p class="section-subtitle">Some of the open source projects I've built or contributed to.</p>
-
-            <!-- Filter Tags -->
-            <div class="filter-tags">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="education">Education</button>
-                <button class="filter-btn" data-filter="chemistry">Chemistry</button>
-                <button class="filter-btn" data-filter="physics">Physics</button>
-                <button class="filter-btn" data-filter="tools">Tools</button>
-            </div>
+            <p class="section-subtitle">Projects I've built during my internship and studies.</p>
 
             <!-- Projects Grid -->
             <div class="projects-grid">
+                <!-- Personal Webpage Card -->
+                <div class="project-card" data-category="personal">
+                    <div class="project-number">About Me</div>
+                    <h3 class="project-title">Personal Webpage</h3>
+                    <p class="project-description">
+                        My personal homepage hosted at HKUST. Learn more about my background, skills, education, and experience in Physics + AI.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HKUST</span>
+                        <span class="tag">PHYS+AI</span>
+                        <span class="tag">Portfolio</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://fylchum.student.ust.hk/" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Visit Page
+                        </a>
+                    </div>
+                </div>
+
                 <!-- COMET 教务系统 -->
                 <div class="project-card" data-category="education tools">
-                    <div class="project-number">Project 0</div>
+                    <div class="project-number">Project 1</div>
                     <h3 class="project-title">COMET 教务管理系统</h3>
                     <p class="project-description">
-                        智能化教育管理解决方案，支持学生/教师/课程管理、智能排课、数据分析、Excel导入导出等功能。
+                        智能化教育管理解决方案，支持学生/教师/课程管理、智能排课、数据分析、Excel导入导出等功能。Built during internship at Center of Mass Educational Tech.
                     </p>
                     <div class="project-tags">
                         <span class="tag">Flask</span>
@@ -76,190 +91,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- 酸碱滴定模拟 -->
-                <div class="project-card" data-category="chemistry">
-                    <div class="project-number">Project 1</div>
-                    <h3 class="project-title">asid-base-chem-sim 酸碱滴定动画模拟</h3>
-                    <p class="project-description">
-                        酸碱滴定的模拟，难点在于几个稳定点是否能精确计算，曲线是否是平滑的。项目难度：简单。
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Chemistry</span>
-                        <span class="tag">Simulation</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Lancelot2004314/asid-base-chem-sim" class="btn btn-outline"
-                            target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
-
-                <!-- IBO 出题器 -->
-                <div class="project-card" data-category="education tools">
-                    <div class="project-number">Project 2</div>
-                    <h3 class="project-title">IBO-question-maker 生物竞赛出题器</h3>
-                    <p class="project-description">
-                        IBO problem maker生物竞赛出题器稳定版，有良好的历史和搜索功能。根据学科和二级标签进行文献类文字出题。
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Biology</span>
-                        <span class="tag">NLP</span>
-                        <span class="tag">Education</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Lancelot2004314/IBO-question-maker" class="btn btn-outline"
-                            target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 三维分子模型 -->
-                <div class="project-card" data-category="chemistry">
-                    <div class="project-number">Project 3</div>
-                    <h3 class="project-title">chemistry-3d-models 三维展示化学分子模型</h3>
-                    <p class="project-description">
-                        三维展示化学分子模型，可以选择一些常见分子，改变视角，支持多种展示模式。
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Chemistry</span>
-                        <span class="tag">3D</span>
-                        <span class="tag">WebGL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Lancelot2004314/chemistry-3d-models" class="btn btn-outline"
-                            target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 元素周期表 -->
-                <div class="project-card" data-category="chemistry">
-                    <div class="project-number">Project 4</div>
-                    <h3 class="project-title">Interactive-periodic-table 互动化学元素周期表</h3>
-                    <p class="project-description">
-                        互动化学元素周期表，可以根据颜色显示电负性等性质。可以选择具体的元素，来看一些数据。
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Chemistry</span>
-                        <span class="tag">Interactive</span>
-                        <span class="tag">Education</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Lancelot2004314/Interactive-periodic-table" class="btn btn-outline"
-                            target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 电子云展示 -->
-                <div class="project-card" data-category="physics chemistry">
-                    <div class="project-number">Project 5</div>
-                    <h3 class="project-title">electroncloudshape 电子云和波函数展示</h3>
-                    <p class="project-description">
-                        3D/2D model for electron cloud 电子云粒子模式展示、波函数的具体函数形式也有展示。
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Physics</span>
-                        <span class="tag">Chemistry</span>
-                        <span class="tag">3D</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Lancelot2004314/electroncloudshape" class="btn btn-outline"
-                            target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 开普勒定律 -->
-                <div class="project-card" data-category="physics">
-                    <div class="project-number">Project 6</div>
-                    <h3 class="project-title">Kepler-law-sim 开普勒定律模拟演示</h3>
-                    <p class="project-description">
-                        开普勒定律模拟演示，可以模拟地球、地球+月球、定制角动量和能量的行星的开普勒定律模拟。
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Physics</span>
-                        <span class="tag">Simulation</span>
-                        <span class="tag">Astronomy</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Lancelot2004314/Kepler-law-sim" class="btn btn-outline"
-                            target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 智能投资分析 -->
-                <div class="project-card" data-category="tools">
-                    <div class="project-number">Project 7</div>
-                    <h3 class="project-title">smart-vc-bot 智能 AI 投资 BP分析器</h3>
-                    <p class="project-description">
-                        智能通过多维度对一个公司、行业进行分析，判断 BP 的投资价值。
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">AI</span>
-                        <span class="tag">Finance</span>
-                        <span class="tag">Analysis</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Lancelot2004314/smart-vc-bot" class="btn btn-outline"
-                            target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 合同风险检查 -->
-                <div class="project-card" data-category="tools">
-                    <div class="project-number">Project 8</div>
-                    <h3 class="project-title">legal-auto-review 合同风险智能检查器</h3>
-                    <p class="project-description">
-                        智能检测合同风险，并且给出改进建议。支持多种合同类型的风险分析。
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">AI</span>
-                        <span class="tag">Legal</span>
-                        <span class="tag">NLP</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Lancelot2004314/legal-auto-review" class="btn btn-outline"
-                            target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -268,14 +99,19 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p class="footer-logo">Center Of Mass Educational Tech</p>
-                <p class="footer-contact">contact: zhufeng@eduzhixin.com</p>
+                <p class="footer-logo">Fei Yuet Lancelot Chum</p>
+                <p class="footer-contact">
+                    <i class="fas fa-envelope"></i> lancelot2004314@gmail.com
+                </p>
                 <div class="footer-links">
+                    <a href="https://fylchum.student.ust.hk/" target="_blank">
+                        <i class="fas fa-user"></i> Personal Page
+                    </a>
                     <a href="https://github.com/Lancelot2004314" target="_blank">
                         <i class="fab fa-github"></i> GitHub
                     </a>
                 </div>
-                <p class="footer-copyright">&copy; 2025 COMET. All Rights Reserved.</p>
+                <p class="footer-copyright">&copy; 2025 Fei Yuet Lancelot Chum. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
