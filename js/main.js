@@ -79,3 +79,6 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('%c Welcome to COMET Portfolio! ', 'background: #3b82f6; color: white; font-size: 16px; padding: 10px; border-radius: 5px;');
     console.log('%c Center Of Mass Educational Tech ', 'color: #60a5fa; font-size: 12px;');
 });
+
+
+
